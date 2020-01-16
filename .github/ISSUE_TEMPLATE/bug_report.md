@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: '버그 리포트 테스트'
+title: 버그 리포트 테스트
 labels: ''
 assignees: ''
 
