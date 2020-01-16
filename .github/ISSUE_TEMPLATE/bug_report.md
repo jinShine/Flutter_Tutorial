@@ -1,24 +1,17 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
+title: '버그 리포트 테스트'
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**증상**
+* 
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**시나리오**
+1.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
