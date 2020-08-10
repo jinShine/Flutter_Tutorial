@@ -26,3 +26,7 @@ source .bash_profile
 ```
 flutter doctor
 ```
+
+### 2. 안드로이드 스튜디오 설치
+
+Plugins 메뉴 -> Flutter Plugin 설치
