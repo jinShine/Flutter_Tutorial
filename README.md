@@ -30,3 +30,8 @@ flutter doctor
 ### 2. 안드로이드 스튜디오 설치
 
 Plugins 메뉴 -> Flutter Plugin 설치
+
+doctor를 이용해서 필요한 의존성을 설치한다.
+```
+flutter doctor
+```
