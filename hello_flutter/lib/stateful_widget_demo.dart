@@ -16,9 +16,44 @@ class _MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<_MyStatefulWidget> {
+
+  String _buttonState;
+
+  @override
+  void initState() {
+    super.initState();
+    print("init state");
+    _buttonState = "OFF";
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Text('이것은 stateful 위젯 입니다.');
+    print("build 호출됨");
+    return Column(
+      children: <Widget>[
+        RaisedButton(
+          child: Text("버튼을 누르세요"),
+          onPressed: _onClick,
+        ),
+        Row(
+          children: <Widget>[
+            Text("버튼 상태"),
+            Text(_buttonState),
+          ],
+        )
+      ],
+    );
   }
-  
+
+  void _onClick() {
+    print("onClick 호출됨");
+    setState(() {
+      if (_buttonState == "OFF") {
+        _buttonState = "ON";
+      } else {
+        _buttonState = "OFF";
+      }
+    });
+  }
+
 }
