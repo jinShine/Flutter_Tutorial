@@ -6,6 +6,7 @@ void main() {
   print("Hello Dart");
 //  runApp(MyApp());
 
+  // Basic Primitive Type
   int number = 10;
   print(number);
 
@@ -16,19 +17,11 @@ void main() {
 
   print(link_str.substring(0,6));
 
+  // Dynimic Type
   var programmerType = 'iOS';
   programmerType = "AND";
 
   print(programmerType);
-
-  const String PASSWORD = '123';
-  String _input = '123';
-
-  if (_input == PASSWORD) {
-    print('로그인 성공');
-  } else {
-    print('로그인 실패');
-  }
 
   //if null 연산자
   String loginAccount = null;
@@ -44,10 +37,17 @@ void main() {
   //const : 상수를 만드는 방법
   const String nameConst = "지니";
 
+  const String PASSWORD = '123';
+  String _input = '123';
+
+  if (_input == PASSWORD) {
+    print('로그인 성공');
+  } else {
+    print('로그인 실패');
+  }
+
   //static : 인스턴스를 생성하지 않고 값을 출력
   print(Queue.maximumCount);
-
-
 
 }
 
