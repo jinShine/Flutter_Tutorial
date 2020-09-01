@@ -51,6 +51,7 @@ void main() {
 
 }
 
+// 클래스
 class Queue {
   static const int maximumCount = 10;
 }
