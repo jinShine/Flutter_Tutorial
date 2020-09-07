@@ -49,11 +49,79 @@ void main() {
   //static : 인스턴스를 생성하지 않고 값을 출력
   print(Queue.maximumCount);
 
+  // 클래스 생성
+  Account account1 = Account("117-11-1123", 20000);
+  print("account1 has ${account1.balance} won");
+
+  // 기본 자료구조
+  // 리스트(List, Map, Set)
+
+  // 1. List
+  List<int> numbers = [1,2,3,4,5];
+
+  for (int number in numbers) {
+    print(number);
+  }
+
+  numbers.forEach((element) {
+    print(element);
+  });
+
+  print('first ${numbers[0]}');
+  print('last ${numbers[numbers.length - 1]}');
+
+  // 2. Map
+  Map<String, int> phoneMap = {
+    "김": 010,
+    "승": 9911,
+    "진": 9999
+  };
+
+  print(phoneMap["김"]);
+
+  phoneMap.forEach((key, value) {
+    print("KEY : ${key}");
+    print("VALUE : ${value}");
+  });
+
+  // 3. Set은 생략
+
 }
 
 // 클래스
 class Queue {
   static const int maximumCount = 10;
+}
+
+class Account {
+  String accountNumber;
+  int balance;
+
+  Account(this.accountNumber, this.balance);
+
+  bool withdraw(int amount) {
+    if (balance > amount) {
+      balance -= amount;
+      return true;
+    }
+
+    return false;
+  }
+
+  bool deposit(int amount) {
+    balance += amount;
+    return true;
+  }
+
+  bool transfer(Account dest, int amount) {
+    if (balance > amount) {
+      balance -= amount;
+      dest.deposit(amount);
+      return true;
+    }
+
+    return false;
+  }
 }
 
 class MyApp extends StatelessWidget {
