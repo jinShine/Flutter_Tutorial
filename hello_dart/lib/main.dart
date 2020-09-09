@@ -1,4 +1,5 @@
 import 'dart:collection';
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
@@ -86,6 +87,9 @@ void main() {
 
   // 3. Set은 생략
 
+
+  // JSON 다루기
+  jsonHandle();
 }
 
 // 클래스
@@ -122,6 +126,28 @@ class Account {
 
     return false;
   }
+}
+
+void jsonHandle() {
+  String jsonStr = """
+  {
+    "basket": {
+      "apple" : 50,
+      "banana" : 10,
+      "grape" : 5
+    }
+  }
+  """;
+
+  Map json = jsonDecode(jsonStr);
+  Map basket = json["basket"];
+  print("basket ${basket}");
+  //basket {apple: 50, banana: 10, grape: 5}
+
+  print(basket["apple"]);
+  print(basket["banana"]);
+  print(basket["grape"]);
+
 }
 
 class MyApp extends StatelessWidget {
