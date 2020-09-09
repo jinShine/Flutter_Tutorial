@@ -141,8 +141,8 @@ void jsonHandle() {
 
   Map json = jsonDecode(jsonStr);
   Map basket = json["basket"];
-  print("basket ${basket}");
-  //basket {apple: 50, banana: 10, grape: 5}
+  print(basket);
+  //{apple: 50, banana: 10, grape: 5}
 
   print(basket["apple"]);
   print(basket["banana"]);
