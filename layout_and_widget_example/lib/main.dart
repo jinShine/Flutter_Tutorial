@@ -23,7 +23,7 @@ class TextDemo extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("단순 텍스트 표시"), // simple text
+            Text("텍스트 샘플"), // simple text
             Text(
               "Styled Text with $_name",
               style: TextStyle(
@@ -36,7 +36,7 @@ class TextDemo extends StatelessWidget {
             ),
             Text(
               _longText,
-              overflow: TextOverflow.ellipsis,
+              overflow: TextOverflow.ellipsis, // 길어지면 짤리는 옵션
             ),
             Text(
                 "안녕",
