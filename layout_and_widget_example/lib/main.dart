@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 void main() {
-  runApp(TextDemo());
+  runApp(ImageDemo());
 }
 
 class TextDemo extends StatelessWidget {
@@ -50,8 +50,29 @@ class TextDemo extends StatelessWidget {
 
     );
   }
+}
+
+class ImageDemo extends StatelessWidget {
   
-      
+  static const String _title = "Image 위젯 데모";
+  
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: _title,
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(title: Text(_title)),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image.asset('assets/london.jpg'),
+            Image.asset('assets/autumn-leaves.jpg')
+          ],
+        ),
+      )
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
