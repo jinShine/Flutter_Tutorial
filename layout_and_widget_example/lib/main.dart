@@ -54,7 +54,7 @@ class TextDemo extends StatelessWidget {
 
 class ImageDemo extends StatelessWidget {
   
-  static const String _title = "Image 위젯 사용 방법";
+  static const String _title = "Image 위젯 사용";
   
   @override
   Widget build(BuildContext context) {
