@@ -27,6 +27,13 @@ source .bash_profile
 flutter doctor
 ```
 
+Android licenses not accepted에 x로 되어있으면 아래와 같이 명령어를 입력하고
+flutter doctor를 다시 실행해서 확인한다.
+```
+flutter doctor --android-licenses
+flutter doctor
+```
+
 ### 2. 안드로이드 스튜디오 설치
 
 * 안드로이드 SDK 설치
