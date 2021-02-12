@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simple_instargram/account_page.dart';
 import 'package:simple_instargram/home_page.dart';
+import 'package:simple_instargram/search_page.dart';
 
 class TabbarPage extends StatefulWidget {
   @override
@@ -11,7 +12,7 @@ class _TabbarPageState extends State<TabbarPage> {
   int _selectedIndex = 0;
   List _pages = [
     HomePage(),
-    Text("page2"),
+    SearchPage(),
     AccountPage()
   ];
 
