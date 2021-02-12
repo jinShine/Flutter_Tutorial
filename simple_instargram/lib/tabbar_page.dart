@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_instargram/home_page.dart';
 
 class TabbarPage extends StatefulWidget {
   @override
@@ -8,7 +9,7 @@ class TabbarPage extends StatefulWidget {
 class _TabbarPageState extends State<TabbarPage> {
   int _selectedIndex = 0;
   List _pages = [
-    Text("page1"),
+    HomePage(),
     Text("page2"),
     Text("page3")
   ];
@@ -18,6 +19,7 @@ class _TabbarPageState extends State<TabbarPage> {
     return Scaffold(
       body: Center(child: _pages[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.black,
         onTap: _onItemTapped,
         currentIndex: _selectedIndex,
         items: <BottomNavigationBarItem>[

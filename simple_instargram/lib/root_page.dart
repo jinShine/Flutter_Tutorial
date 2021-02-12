@@ -7,4 +7,3 @@ class RootPage extends StatelessWidget {
     return TabbarPage();
   }
 }
-
