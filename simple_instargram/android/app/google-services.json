@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "808921352219",
+    "project_id": "flutterinsta-2c78a",
+    "storage_bucket": "flutterinsta-2c78a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808921352219:android:50ccd109160b9d7f1090be",
+        "android_client_info": {
+          "package_name": "com.buzz.simple_instargram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808921352219-n74f4of8rm90hfpqi2a83040p1f37i47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.buzz.simple_instargram",
+            "certificate_hash": "2f686982fe620bb1a5015a20a560c203cf8f758a"
+          }
+        },
+        {
+          "client_id": "808921352219-dien8fhdl54gbbil9969ikr50vq5a37p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUSj-QEV2cRoAUazQfuSx_x659pBWVfgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808921352219-dien8fhdl54gbbil9969ikr50vq5a37p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
