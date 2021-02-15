@@ -104,6 +104,10 @@ void main() {
 
   // JSON 다루기
   jsonHandle();
+
+  Car car = Car(color: 'red',);
+  print("seat: ${car.seats}");
+  print("color: ${car.color}");
 }
 
 /*
@@ -136,6 +140,23 @@ List<int> getEvenNumbers(Iterable<int> numbers) {
 // 클래스
 class Queue {
   static const int maximumCount = 10;
+}
+
+class Car {
+  int seats;
+  String color;
+
+  // 초기화 인수에 []의 의미는 옵션(넣어도되고, 안넣어도되고)
+  // Car(int seats, [String color = 'black']) {
+  //   this.seats = seats;
+  //   this.color = color;
+  // }
+
+  // Car(this.seats, this.color);
+  // Car(this.seats, [this.color = 'red']);
+
+  //{}로 묶어주면 네이밍을 지정할 수 있고, 순서도 바뀔수 있고, 빈 값도 이용가능.
+  Car({this.seats, this.color});
 }
 
 class Account {
