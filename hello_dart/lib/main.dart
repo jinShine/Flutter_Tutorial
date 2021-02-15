@@ -98,6 +98,9 @@ void main() {
 
   // 3. Set은 생략
 
+  // function
+  print("4 times two is ${timesTwo(2)}");
+  runTwice(3, timesTwo);
 
   // JSON 다루기
   jsonHandle();
@@ -107,9 +110,28 @@ void main() {
   function
  */
 
+int timesTwo(int x) {
+  return x * 2;
+}
 
+// => 은 한줄짜리 리턴
+int timesFour(int x) => timesTwo(x);
 
+int runTwice(int x, Function f) {
+  x = f(x);
+  return x;
+}
 
+List<int> getEvenNumbers(Iterable<int> numbers) {
+
+  var evenNumbers = List<int>();
+
+  numbers.forEach((n) {
+    if (n % 2 == 0) evenNumbers.add(n);
+  });
+
+  return evenNumbers;
+}
 
 // 클래스
 class Queue {
