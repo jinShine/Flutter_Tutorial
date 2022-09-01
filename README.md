@@ -38,7 +38,17 @@ flutter doctor --android-licenses
 flutter doctor
 ```
 
-### 2. 안드로이드 스튜디오 설치
+### 2. iOS Setup
+
+* Xcode 다운로드
+* 경로 설정
+```
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -runFirstLaunch
+sudo xcodebuild -license
+```
+
+### 3. 안드로이드 스튜디오 설치
 
 * 안드로이드 SDK 설치
 * Plugins 메뉴 -> Flutter Plugin 설치
