@@ -13,12 +13,16 @@ ex) ~/Documents/private/Dev
 환경변수 설정
 ```
 vi ~/.bash_profile
+or 
+vi ~/.zshrc
 export PATH="$HOME/Documents/private/Dev/flutter/bin:$PATH"
 ```
 
 적용
 ```
 source .bash_profile
+or
+source ~/.zshrc
 ```
 
 필요한 의존성이 무엇인지 확인해본다.
