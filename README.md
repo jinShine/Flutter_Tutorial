@@ -65,6 +65,6 @@ flutter doctor
   - Splash
   - Row & Column
   - Webview
-  - StatefulWidget
+  - StatelessWidget/StatefulWidget
   - Image/Font
   - Date
